@@ -1,8 +1,14 @@
 import fizzbuzz from "./fizzbuzz";
 
 function secuenciaFizzBuzz(num){
-    if(num==3) return fizzbuzz(1)+","+fizzbuzz(2)+","+fizzbuzz(3);
-    return fizzbuzz(1)+","+fizzbuzz(2);
+    let cadena="";
+    for(let i=1;i<=num;i++)
+    {
+        cadena=cadena+fizzbuzz(i);
+        if(i!=num)
+            cadena=cadena+",";
+    }
+    return cadena;
 }
 
 export default secuenciaFizzBuzz;
