@@ -16,4 +16,7 @@ describe("FizzBuzz",()=>{
     it("genera Fizz para 5",()=>{
         expect(fizzbuzz(5)).toEqual("Buzz");
     })
+    it("genera Fizz para 5",()=>{
+        expect(fizzbuzz(10)).toEqual("Buzz");
+    })
 })
