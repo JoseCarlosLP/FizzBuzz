@@ -29,5 +29,8 @@ describe("FizzBuzz",()=>{
     it("genera para 2 numeros",()=>{
         expect(secuenciaFizzBuzz(2)).toEqual("1,2");
     })
+    it("genera para 3 numeros",()=>{
+        expect(secuenciaFizzBuzz(3)).toEqual("1,2,Fizz");
+    })
 })
 
