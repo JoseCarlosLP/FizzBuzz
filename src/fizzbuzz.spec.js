@@ -1,4 +1,5 @@
 import fizzbuzz from "./fizzbuzz";
+import secuenciaFizzBuzz from "./secuencia";
 
 describe("FizzBuzz",()=>{
     it("genera para el 1",()=>{
@@ -25,4 +26,8 @@ describe("FizzBuzz",()=>{
     it("genera Fizz para multiplos de 3 y 5",()=>{
         expect(fizzbuzz(30)).toEqual("FizzBuzz");
     })
+    it("genera para 2 numeros",()=>{
+        expect(secuenciaFizzBuzz(2)).toEqual("1,2");
+    })
 })
+
